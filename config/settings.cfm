@@ -14,3 +14,6 @@
 --->
 <cfset set(dataSourceName="litepost")>
 <cfset set(functionName="textField", labelPlacement="before")>
+<cfset set(functionName="textArea", labelPlacement="before")>
+<cfset set(functionName="select", labelPlacement="before")>
+

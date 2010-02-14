@@ -14,7 +14,7 @@
 				
 					<cfcol header="Url" text="#url#" />
 				
-					<cfcol header="Date Created" text="#dateCreated#" />
+					<cfcol header="Date Created" text="#createdAt#" />
 				
 	<cfcol header="" text="#linkTo(text='Show', action='show', key=commentID)#" />
 	<cfcol header="" text="#linkTo(text='Edit', action='edit', key=commentID)#" />

@@ -4,9 +4,9 @@
 	
 					<cfcol header="User I D" text="#userID#" />
 				
-					<cfcol header="Fname" text="#fname#" />
+					<cfcol header="First Name" text="#fname#" />
 				
-					<cfcol header="Lname" text="#lname#" />
+					<cfcol header="Last Name" text="#lname#" />
 				
 					<cfcol header="Email" text="#email#" />
 				

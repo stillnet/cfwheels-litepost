@@ -7,9 +7,9 @@
 			#startFormTag(action="create")#
 		
 				
-						#textField(objectName='user', property='fname', label='Fname')#
+						#textField(objectName='user', property='fname', label='First Name')#
 					
-						#textField(objectName='user', property='lname', label='Lname')#
+						#textField(objectName='user', property='lname', label='Last Name')#
 					
 						#textField(objectName='user', property='email', label='Email')#
 					

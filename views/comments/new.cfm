@@ -17,7 +17,7 @@
 					
 						#textField(objectName='comment', property='url', label='Url')#
 					
-						#dateTimeSelect(objectName='comment', property='dateCreated', dateOrder='year,month,day', monthDisplay='abbreviations', label='Date Created')#
+						#dateTimeSelect(objectName='comment', property='createdAt', dateOrder='year,month,day', monthDisplay='abbreviations', label='Date Created')#
 					
 
 				#submitTag()#

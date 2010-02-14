@@ -12,9 +12,9 @@
 				
 					<cfcol header="Body" text="#body#" />
 				
-					<cfcol header="Date Created" text="#dateCreated#" />
+					<cfcol header="Date Created" text="#createdAt#" />
 				
-					<cfcol header="Date Last Updated" text="#dateLastUpdated#" />
+					<cfcol header="Date Last Updated" text="#updatedAt#" />
 				
 	<cfcol header="" text="#linkTo(text='Show', action='show', key=entryID)#" />
 	<cfcol header="" text="#linkTo(text='Edit', action='edit', key=entryID)#" />

@@ -18,10 +18,10 @@
 						#entry.body#</p>
 				
 					<p><label>Date Created</label> <br />
-						#entry.dateCreated#</p>
+						#entry.createdAt#</p>
 				
 					<p><label>Date Last Updated</label> <br />
-						#entry.dateLastUpdated#</p>
+						#entry.updatedAt#</p>
 				
 
 #linkTo(text="Return to the listing", action="index")# | #linkTo(text="Edit this entry", action="edit", key=entry.entryID)#

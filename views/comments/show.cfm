@@ -21,7 +21,7 @@
 						#comment.url#</p>
 				
 					<p><label>Date Created</label> <br />
-						#comment.dateCreated#</p>
+						#comment.createdAt#</p>
 				
 
 #linkTo(text="Return to the listing", action="index")# | #linkTo(text="Edit this comment", action="edit", key=comment.commentID)#

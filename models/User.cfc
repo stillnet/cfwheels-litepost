@@ -1,6 +1,7 @@
 <cfcomponent extends="Model" output="false">
 
 	<cffunction name="init">
+		<cfset hasMany("entries")>
 		<cfset validatesPresenceOf(properties="fname",message="First Name can't be empty")>
 		<cfset validatesPresenceOf(properties="lname",message="Last Name can't be empty")>
 		<cfset validatesPresenceOf(properties="email,username,password")>

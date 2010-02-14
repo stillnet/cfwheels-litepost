@@ -2,7 +2,7 @@
 	
 	<!--- entries/index --->
 	<cffunction name="index">
-		<cfset entries = model("Entry").findAll()>
+		<cfset entries = model("Entry").findAll(include="user")>
 	</cffunction>
 	
 	<!--- entries/show/key --->
@@ -21,12 +21,19 @@
 	
 	<!--- entries/new --->
 	<cffunction name="new">
+		
+		<!--- get the users for the drop down box. --->
+		<cfset users = model("User").findAll() />
+		
 		<cfset entry = model("Entry").new()>
 	</cffunction>
 	
 	<!--- entries/edit/key --->
 	<cffunction name="edit">
 	
+		<!--- get the users for the drop down box. --->
+		<cfset users = model("User").findAll() />
+		
 		<!--- Find the record --->
     	<cfset entry = model("Entry").findByKey(params.key)>
     	
@@ -41,6 +48,9 @@
 	<!--- entries/create --->
 	<cffunction name="create">
 		<cfset entry = model("Entry").new(params.entry)>
+		
+		<!--- I'm not using category for now.  Just set it to 0 --->
+		<cfset entry.categoryID = 0>
 		
 		<!--- Verify that the entry creates successfully --->
 		<cfif entry.save()>
@@ -57,6 +67,9 @@
 	<cffunction name="update">
 		<cfset entry = model("Entry").findByKey(params.key)>
 		
+		<!--- I'm not using category for now.  Just set it to 0 --->
+		<cfset entry.categoryID = 0>
+			
 		<!--- Verify that the entry updates successfully --->
 		<cfif entry.update(params.entry)>
 			<cfset flashInsert(success="The entry was updated successfully.")>	
