@@ -1,1 +1,12 @@
 label { display: block}
+body  { font-family: arial; }
+
+#header { background-color: #AAAAFF; padding-top: 5px; padding-bottom: 5px; margin-bottom: 5px; }
+#header h1 { font-size: 35px; font-weight: bold; background-color: #AAAAFF; }
+
+
+.entry { width: 500px; border-bottom: 1px solid grey; margin-bottom: 10px; }
+.entrytitle { font-weight: bold; font-size: 1.2em; }
+.entrydate  { text-align: right; color: grey; }
+.entrybody  { }
+.entrytagline { font-size: .8em; font-style: italic }

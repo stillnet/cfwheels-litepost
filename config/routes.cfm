@@ -4,4 +4,4 @@
 --->
 <!--- <cfset addRoute(name="home", pattern="", controller="wheels", action="wheels")> --->
 
-<cfset addRoute(name="home", pattern="", controller="entries", action="index")>
+<cfset addRoute(name="home", pattern="", controller="entries", action="publicindex")>

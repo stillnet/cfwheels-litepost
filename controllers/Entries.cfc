@@ -5,6 +5,10 @@
 		<cfset entries = model("Entry").findAll(include="user")>
 	</cffunction>
 	
+	<cffunction name="publicindex">
+		<cfset entries = model("Entry").findAll(include="user")>
+	</cffunction>
+	
 	<!--- entries/show/key --->
 	<cffunction name="show">
 		

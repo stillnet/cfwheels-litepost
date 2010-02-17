@@ -1,8 +1,8 @@
-<h1>Listing users</h1>
+<h1>Manage Users</h1>
 
-<cftable query="users" colHeaders="true" HTMLTable="true">
+<cftable query="users" colHeaders="true" HTMLTable="true" border>
 	
-					<cfcol header="User I D" text="#userID#" />
+					<cfcol header="UserID" text="#userID#" />
 				
 					<cfcol header="First Name" text="#fname#" />
 				
@@ -11,10 +11,6 @@
 					<cfcol header="Email" text="#email#" />
 				
 					<cfcol header="Username" text="#username#" />
-				
-					<cfcol header="Password" text="#password#" />
-				
-					<cfcol header="Role" text="#role#" />
 				
 	<cfcol header="" text="#linkTo(text='Show', action='show', key=userID)#" />
 	<cfcol header="" text="#linkTo(text='Edit', action='edit', key=userID)#" />
